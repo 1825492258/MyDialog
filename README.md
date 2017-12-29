@@ -134,8 +134,7 @@ Dialog Demo
        <item name="android:windowNoTitle">true</item>
        <item name="android:windowIsTranslucent">true</item>
      </style>
-###
-   <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+     <style name="custom_dialog" parent="@android:style/Theme.Dialog">
        <item name="android:windowFrame">@null</item>
        <item name="android:windowIsFloating">true</item>
        <item name="android:windowIsTranslucent">true</item>
@@ -145,5 +144,5 @@ Dialog Demo
        <item name="android:windowContentOverlay">@null</item>
        <item name="android:backgroundDimEnabled">false</item>
        <item name="android:backgroundDimAmount">0.6</item>
-   </style>
+      </style>
 ![Dialog](image/one.png)
