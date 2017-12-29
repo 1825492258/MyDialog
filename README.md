@@ -85,7 +85,7 @@ Dialog Demo
         }
     }
 
-## 版本跟新时，开启服务在状态栏中展示更新进度
+### 版本跟新时，开启服务在状态栏中展示更新进度
     /**
      * 展示Notification
      *
@@ -124,8 +124,8 @@ Dialog Demo
         return contentIntent;
     }
 
-## 自定义弹窗
-### <style name="SheetDialogStyle" parent="@android:style/Theme.Dialog">
+### 自定义弹窗
+    <style name="SheetDialogStyle" parent="@android:style/Theme.Dialog">
        <item name="android:windowBackground">@android:color/transparent</item>
        <item name="android:windowContentOverlay">@null</item>
        <item name="android:windowIsFloating">true</item>
