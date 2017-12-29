@@ -125,7 +125,7 @@ Dialog Demo
     }
 
 ## 自定义弹窗
-   <style name="SheetDialogStyle" parent="@android:style/Theme.Dialog">
+### <style name="SheetDialogStyle" parent="@android:style/Theme.Dialog">
        <item name="android:windowBackground">@android:color/transparent</item>
        <item name="android:windowContentOverlay">@null</item>
        <item name="android:windowIsFloating">true</item>
