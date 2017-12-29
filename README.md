@@ -123,3 +123,26 @@ Dialog Demo
                 PendingIntent.FLAG_UPDATE_CURRENT);
         return contentIntent;
     }
+
+## 自定义弹窗
+   <style name="SheetDialogStyle" parent="@android:style/Theme.Dialog">
+       <item name="android:windowBackground">@android:color/transparent</item>
+       <item name="android:windowContentOverlay">@null</item>
+       <item name="android:windowIsFloating">true</item>
+       <item name="android:windowFrame">@null</item>
+       <item name="android:backgroundDimEnabled">true</item>
+       <item name="android:windowNoTitle">true</item>
+       <item name="android:windowIsTranslucent">true</item>
+   </style>
+   <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+       <item name="android:windowFrame">@null</item>
+       <item name="android:windowIsFloating">true</item>
+       <item name="android:windowIsTranslucent">true</item>
+       <item name="android:windowNoTitle">true</item>
+       <item name="android:background">@android:color/transparent</item>
+       <item name="android:windowBackground">@android:color/transparent</item>
+       <item name="android:windowContentOverlay">@null</item>
+       <item name="android:backgroundDimEnabled">false</item>
+       <item name="android:backgroundDimAmount">0.6</item>
+   </style>
+![Dialog](image/one.png)
