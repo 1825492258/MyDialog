@@ -96,6 +96,13 @@ public class UpdateService extends Service {
         notifyThatExceedLv21(tickerMsg, message, progress);
     }
 
+    /**
+     * 展示Notification
+     *
+     * @param tickerMsg 标题
+     * @param message   信息
+     * @param progress  加载的进度
+     */
     private void notifyThatExceedLv21(String tickerMsg, String message, int progress) {
         NotificationCompat.Builder notification = new NotificationCompat.Builder(this);
         notification.setSmallIcon(R.mipmap.ic_launcher); // 设置小图标 必须
