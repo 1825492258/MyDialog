@@ -134,6 +134,7 @@ Dialog Demo
        <item name="android:windowNoTitle">true</item>
        <item name="android:windowIsTranslucent">true</item>
    </style>
+
    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
        <item name="android:windowFrame">@null</item>
        <item name="android:windowIsFloating">true</item>
