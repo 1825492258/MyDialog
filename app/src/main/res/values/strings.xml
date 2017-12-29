@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyDialog</string>
+    <string name="empty">暂无数据</string>
+    <string name="error">网络请求失败</string>
+</resources>
