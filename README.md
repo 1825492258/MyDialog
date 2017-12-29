@@ -86,10 +86,11 @@ Dialog Demo
     }
 
 ### 版本跟新时，开启服务在状态栏中展示更新进度
-![Notification](image/one.png)
+![Notification](image/two.png)
 
 ### 自定义弹窗
 ![Dialog](image/one.png)
+
     <style name="SheetDialogStyle" parent="@android:style/Theme.Dialog">
        <item name="android:windowBackground">@android:color/transparent</item>
        <item name="android:windowContentOverlay">@null</item>
