@@ -8,6 +8,7 @@ import android.view.View;
 import com.item.dialog.activity.LoadActivity;
 import com.item.dialog.activity.TwoActivity;
 import com.item.dialog.view.DialogLogin;
+import com.item.dialog.view.LoadDialog;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_one).setOnClickListener(this);
         findViewById(R.id.btn_two).setOnClickListener(this);
         findViewById(R.id.btn_three).setOnClickListener(this);
+        findViewById(R.id.btn_four).setOnClickListener(this);
     }
 
     @Override
@@ -32,10 +34,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_three:
                 initMyDialog();
                 break;
+            case R.id.btn_four:
+                initLoad();
+                break;
         }
     }
 
-   private DialogLogin mDialog;
+    private DialogLogin mDialog;
 
     // 展示弹窗
     private void initMyDialog() {
@@ -58,5 +63,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             });
         }
         mDialog.show();
+    }
+
+    private LoadDialog mLoad;
+
+    private void initLoad() {
+        if (mLoad == null) {
+            mLoad = new LoadDialog(this);
+        }
+        mLoad.show();
     }
 }

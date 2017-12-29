@@ -90,6 +90,7 @@ Dialog Demo
 
 ### 自定义弹窗
 ![Dialog](image/one.png)
+![Dialog](image/ones.png)
 
     <style name="SheetDialogStyle" parent="@android:style/Theme.Dialog">
        <item name="android:windowBackground">@android:color/transparent</item>
