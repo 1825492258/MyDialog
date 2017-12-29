@@ -3,7 +3,7 @@ Dialog Demo
 
 ## 加载布局封装
 ### 在网络请求的时候先展示加载界面，如果请求失败展示失败界面并点击可以再次加载
-### public class LoadLayout extends FrameLayout {
+    public class LoadLayout extends FrameLayout {
 
         public LoadLayout(@NonNull Context context) {
             this(context, null);
@@ -86,7 +86,7 @@ Dialog Demo
     }
 
 ## 版本跟新时，开启服务在状态栏中展示更新进度
-###  /**
+    /**
      * 展示Notification
      *
      * @param tickerMsg 标题
