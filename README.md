@@ -86,45 +86,10 @@ Dialog Demo
     }
 
 ### 版本跟新时，开启服务在状态栏中展示更新进度
-    /**
-     * 展示Notification
-     *
-     * @param tickerMsg 标题
-     * @param message   信息
-     * @param progress  加载的进度
-     */
-    private void notifyThatExceedLv21(String tickerMsg, String message, int progress) {
-        NotificationCompat.Builder notification = new NotificationCompat.Builder(this);
-        notification.setSmallIcon(R.mipmap.ic_launcher); // 设置小图标 必须
-        // 设置大图标
-        notification.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.bg_message_imooc));
-        notification.setContentTitle("MyTest"); // 设置标题 必须
-        if (progress > 0 && progress < 100) {
-            notification.setProgress(100, progress, false);
-        } else {
-            // false 可以将进度条隐藏
-            notification.setProgress(0, 0, false);
-            notification.setContentText(message); // 设置内容 必须
-        }
-        // 设置为true，点击该条通知会自动删除，false时只能通过滑动来删除
-        notification.setAutoCancel(true);
-        notification.setWhen(System.currentTimeMillis()); // 时间
-        notification.setTicker(tickerMsg); // 设置状态栏开始动画的文字
-        // 给Notification设置一个Action，设置点击通知后的操作（可以跳转Activity，打开Service，或发送广播）
-        notification.setContentIntent(progress >= 100 ? getContentIntent() : PendingIntent.getActivity(this, 0,
-                new Intent(), PendingIntent.FLAG_UPDATE_CURRENT));
-        mNotification = notification.build();
-        // 发送通知
-        notificationManager.notify(0, mNotification);
-    }
-
-    private PendingIntent getContentIntent() {
-        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, getInstallApkIntent(),
-                PendingIntent.FLAG_UPDATE_CURRENT);
-        return contentIntent;
-    }
+![Notification](image/one.png)
 
 ### 自定义弹窗
+![Dialog](image/one.png)
     <style name="SheetDialogStyle" parent="@android:style/Theme.Dialog">
        <item name="android:windowBackground">@android:color/transparent</item>
        <item name="android:windowContentOverlay">@null</item>
@@ -145,4 +110,4 @@ Dialog Demo
        <item name="android:backgroundDimEnabled">false</item>
        <item name="android:backgroundDimAmount">0.6</item>
       </style>
-![Dialog](image/one.png)
+
