@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.item.dialog.activity.ThreeActivity">
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:indeterminate="true"
+        app:cpb_color="@color/colorAccent"
+        app:cpb_colors="@array/gplus_colors"
+        app:cpb_max_sweep_angle="300"
+        app:cpb_min_sweep_angle="20"
+        app:cpb_rotation_speed="1.0"
+        app:cpb_stroke_width="3dp" />
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true"
+        app:cpb_color="@color/colorAccent"
+        app:cpb_max_sweep_angle="300"
+        app:cpb_min_sweep_angle="20"
+        app:cpb_rotation_speed="1.0"
+        app:cpb_stroke_width="3dp" />
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:indeterminate="true"
+        app:cpb_color="@color/colorAccent"
+        app:cpb_rotation_speed="2.0"
+        app:cpb_stroke_width="3dp"
+        app:cpb_sweep_speed="2.0" />
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:indeterminate="true"
+        app:cpb_color="@color/colorAccent"
+        app:cpb_rotation_speed="1.0"
+        app:cpb_stroke_width="3dp"
+        app:cpb_sweep_speed="1.0" />
+</LinearLayout>

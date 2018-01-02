@@ -26,4 +26,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'org.xutils:xutils:3.5.0'
+    compile 'com.github.castorflex.smoothprogressbar:library-circular:1.3.0'
 }

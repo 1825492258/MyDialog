@@ -88,6 +88,9 @@ Dialog Demo
 ### 版本跟新时，开启服务在状态栏中展示更新进度
 ![Notification](image/two.png)
 
+### SmoothProgressBar的使用
+### https://github.com/castorflex/SmoothProgressBar
+
 ### 自定义弹窗
 ![Dialog](image/one.png)
 ![Dialog](image/ones.png)
