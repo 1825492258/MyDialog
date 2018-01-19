@@ -128,6 +128,7 @@ Dialog Demo
 ![Dialog](image/one.png)
 ![Dialog](image/ones.png)
 ![多级Dialog](image/three.png)
+
     <style name="SheetDialogStyle" parent="@android:style/Theme.Dialog">
        <item name="android:windowBackground">@android:color/transparent</item>
        <item name="android:windowContentOverlay">@null</item>
