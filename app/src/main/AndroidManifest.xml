@@ -29,7 +29,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".activity.ThreeActivity"></activity>
+        <activity android:name=".activity.ThreeActivity" />
+        <activity android:name=".bittom.BottomDialogActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.item.dialog.bittom.BottomDialogActivity">
+
+    <Button
+        android:id="@+id/btn_bottom_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_bottom_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btn_bottom_three"
+        android:layout_height="wrap_content" />
+
+    <net.cachapa.expandablelayout.ExpandableLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/text_expand"
+        app:el_duration="1000"
+        app:el_expanded="true"
+        app:el_parallax="0.5">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorAccent" />
+    </net.cachapa.expandablelayout.ExpandableLayout>
+</LinearLayout>

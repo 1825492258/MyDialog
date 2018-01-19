@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:orientation="vertical">
+
+    <net.cachapa.expandablelayout.ExpandableLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expand_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:el_duration="1000"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorAccent" />
+    </net.cachapa.expandablelayout.ExpandableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -27,8 +27,8 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:layout_width="match_parent"
         android:id="@+id/btn_five"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
@@ -38,8 +38,14 @@
         android:text="弹出一个弹窗" />
 
     <Button
-        android:layout_width="match_parent"
         android:id="@+id/btn_four"
-        android:text="加载"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载" />
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="深度弹窗" />
 </LinearLayout>

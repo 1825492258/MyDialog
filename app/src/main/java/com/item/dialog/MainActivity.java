@@ -8,6 +8,7 @@ import android.view.View;
 import com.item.dialog.activity.LoadActivity;
 import com.item.dialog.activity.ThreeActivity;
 import com.item.dialog.activity.TwoActivity;
+import com.item.dialog.bittom.BottomDialogActivity;
 import com.item.dialog.view.DialogLogin;
 import com.item.dialog.view.LoadDialog;
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_three).setOnClickListener(this);
         findViewById(R.id.btn_four).setOnClickListener(this);
         findViewById(R.id.btn_five).setOnClickListener(this);
+        findViewById(R.id.btn_dialog).setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_five:
                 startActivity(new Intent(this, ThreeActivity.class));
+                break;
+            case R.id.btn_dialog: // 深度弹窗
+                startActivity(new Intent(this, BottomDialogActivity.class));
                 break;
         }
     }
