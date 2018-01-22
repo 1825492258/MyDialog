@@ -30,7 +30,9 @@
             android:exported="true" />
 
         <activity android:name=".activity.ThreeActivity" />
-        <activity android:name=".bittom.BottomDialogActivity"></activity>
+        <activity android:name=".bittom.BottomDialogActivity" />
+        <activity android:name=".activity.DropDownActivity" />
+        <activity android:name=".test.CustomActivity"></activity>
     </application>
 
 </manifest>

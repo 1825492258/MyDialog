@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.item.dialog.activity.DropDownActivity">
+
+    <com.yyydjk.library.DropDownMenu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dddividerColor="@color/gray"
+        app:ddmaskColor="@color/mask_color"
+        app:ddmenuBackgroundColor="@color/white"
+        app:ddmenuMenuHeightPercent="0.5"
+        app:ddmenuSelectedIcon="@drawable/common_filter_arrow_up"
+        app:ddmenuTextSize="13sp"
+        android:gravity="center"
+        app:ddmenuUnselectedIcon="@drawable/common_filter_arrow_down"
+        app:ddtextSelectedColor="@color/drop_down_selected"
+        app:ddtextUnselectedColor="@color/drop_down_unselected"
+        app:ddunderlineColor="@color/gray" />
+
+</LinearLayout>

@@ -5,10 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.item.dialog.activity.DropDownActivity;
 import com.item.dialog.activity.LoadActivity;
 import com.item.dialog.activity.ThreeActivity;
 import com.item.dialog.activity.TwoActivity;
 import com.item.dialog.bittom.BottomDialogActivity;
+import com.item.dialog.test.CustomActivity;
 import com.item.dialog.view.DialogLogin;
 import com.item.dialog.view.LoadDialog;
 
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_four).setOnClickListener(this);
         findViewById(R.id.btn_five).setOnClickListener(this);
         findViewById(R.id.btn_dialog).setOnClickListener(this);
+        findViewById(R.id.btn_drop_down).setOnClickListener(this);
+        findViewById(R.id.btn_custom).setOnClickListener(this);
     }
 
     @Override
@@ -46,6 +50,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_dialog: // 深度弹窗
                 startActivity(new Intent(this, BottomDialogActivity.class));
+                break;
+            case R.id.btn_drop_down:
+                startActivity(new Intent(this, DropDownActivity.class));
+                break;
+            case R.id.btn_custom:
+                startActivity(new Intent(this, CustomActivity.class));
                 break;
         }
     }
