@@ -128,6 +128,7 @@ Dialog Demo
 ![Dialog](image/one.png)
 ![Dialog](image/ones.png)
 ![多级Dialog](image/three.png)
+![微信红包](image/five.png)
 
     <style name="SheetDialogStyle" parent="@android:style/Theme.Dialog">
        <item name="android:windowBackground">@android:color/transparent</item>
@@ -149,5 +150,6 @@ Dialog Demo
        <item name="android:backgroundDimEnabled">false</item>
        <item name="android:backgroundDimAmount">0.6</item>
       </style>
-
+### DropDownMenu
+### https://github.com/dongjunkun/DropDownMenu
 ### Apps 别人写的一个MVP demo

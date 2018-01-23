@@ -27,6 +27,7 @@ import android.widget.ProgressBar;
 
 import com.antonioleiva.mvpexample.app.R;
 import com.antonioleiva.mvpexample.app.main.MainActivity;
+import com.antonioleiva.mvpexample.app.test.TestActivity;
 
 public class LoginActivity extends Activity implements LoginView, View.OnClickListener {
 
@@ -69,7 +70,7 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
     }
 
     @Override public void navigateToHome() {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, TestActivity.class));
         finish();
     }
 
